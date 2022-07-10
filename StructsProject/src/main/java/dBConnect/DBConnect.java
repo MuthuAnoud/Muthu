@@ -154,7 +154,7 @@ public class DBConnect {
 			
 			ps.setString(2, user.getCpass());
 			
-			ps.setInt(3, user.getFlag());
+			ps.setInt(3, 0);
 			
 			int rs=ps.executeUpdate();
 			
@@ -182,11 +182,19 @@ public class DBConnect {
 		
 		DBConnect db=new DBConnect();
 		
+		UserDIO user=new UserDIO();
+		
+		user.setCname("muthu");
+		
+		user.setCpass("muthu123");
+		
 		System.out.println(db.checkUser("rose", "rose456"));
 		
 		System.out.println(db.checkFlag("rose"));
 		
 		System.out.println(db.updateFlag("rose", 0));
+		
+		System.out.println(db.RegisterUser(user));
 		
 	}
 

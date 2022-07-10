@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Invoice</title>
 </head>
-<body>
+<body bgcolor="pink">
 <%
 Enumeration em=session.getAttributeNames();
 while(em.hasMoreElements()){
